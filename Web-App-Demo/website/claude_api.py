@@ -3,7 +3,7 @@ from flask import jsonify
 
 class ClaudeAPI:
     def __init__(self):
-        self.client = anthropic.Client(api_key='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')
+        self.client = anthropic.Client(api_key='your-api-key')
         self.conversation_history = []
         
     def get_response(self, user_message):

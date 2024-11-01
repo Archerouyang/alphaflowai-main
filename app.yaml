@@ -1,0 +1,12 @@
+name: alphaflowai
+region: nyc
+services:
+  - name: web
+    github:
+      repo: yourusername/alphaflowai
+      branch: main
+    build_command: pip install -r requirements.txt
+    run_command: gunicorn main:app
+    environment_slug: python
+    instance_size_slug: basic-xxs
+    instance_count: 1 
